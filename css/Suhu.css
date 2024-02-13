@@ -1,26 +1,37 @@
-#navigation-bar {
+* {
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+body {
+    height : 90vh;
+    background-color: hotpink;
     display : flex;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
 }
 
-#logo {
-    height : min-content;
-    margin-top: 0;
-
+.container {
+    width : 350px;
+    background-color: aliceblue;
+    padding : 150px 30px 90px;
+    box-shadow: 0 20px 30px 80px solid pink;
 }
 
-#navigation {
-    display : flex;
+.Termometer-Suhu{
+    font-size: 50px;
+    color: hotpink;
+    align-items: center;
+    justify-content: center;
 }
 
-#navigation>a {
-    text-decoration: none;
-    padding : 8px;
-}
-
-#navigation:hover {
-    color : pink;
-}
+.fa-solid fa-temperature-full {
+    --fa-display: block;
+    text-align: center;
+  }
 
 .input-section {
     display : flex;
@@ -47,7 +58,7 @@
     cursor : pointer;
 }
 
-.my-button:hover {
-    background-color: rgba(255, 20, 145, 0.582);
-    transform : translateY(4px);
+.my-button:hover{
+    background-color: pink;
+    transform: translateY();
 }
