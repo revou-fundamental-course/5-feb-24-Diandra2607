@@ -4,22 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Suhu</title>
-    <link rel ="stylesheet" href="css/Suhu.css">
+    <link rel ="stylesheet" href="css/Suhu.css">       
 </head>
+
 <body>
-    <header id = "navigation-bar">
-        <h3 id = "logo">Logo</h3>
-        <nav class = "navigation">
-            <a href="">Lihat Hasil</a>
-            <a href="">Lihat Rumus</a>
-        </nav>
-    </header>
-    <div class = "input-section">
-        <label for "input-field">Celcius</label>
-        <input type = "number" class = "input-field">
+    <div class="container">
+        <header>
+          <div id = "Logo"></div>
+            <span class = "Termometer-Suhu"><i class="fa-solid fa-temperature-full">Termometer Suhu</i></span>
+            <br> 
+        </header>
+        <br> 
+        <div class = "CF">
+            <label for "Celsius">Celsius</label>
+            <input id = "Celsius" type = "text" placeholder = "Masukkan Angka">
+            <button class = "my-button" onclick = "Konversi()">Konversi</button>
+            <br><br>
+        </div>
+       
+    <div class = "CF">
+        <label for "Fahrenheit">Fahrenheit</label>
+        <input id = "Fahrenheit" type = "text" placeholder = "Masukkan Angka">
+        <button class = "my-button" onclick = "Reverse()">Reverse</button>
+        <br><br>
     </div>
-    <button class = "my-button">Konversi</button>
-    <button class = "my-button">Reset</button>
-    <button class = "my-button">Reverse</button>
+       
+<div class = "container-3">
+    <label for "Cara Perhitungan">Cara Perhitungan</label>
+    <input type = "text">
+    <button class = "my-button" onclick = "Reset()">Reset</button>
+    <br><br>
+</div>   
+<a href="#Rumus Celsius Ke Fahrenheit">Rumus Celsius Ke Fahrenheit</a>
+<h2 id = "Rumus Celsius Ke Fahrenheit"></h2>
+<p>$$Fahrenheit = (\frac{9}{5}\times Celsius)+32$$</p>
+<a href="#Rumus Fahrenheit Ke Celsius">Rumus Fahrenheit Ke Celsius</a>
+<h2 id = "Rumus Fahrenheit Ke Celsius"></h2>
+<p>$$Celsius = \frac{5}{9}\times (Fahrenheit-32)$$</p>
+
+<script type='text/x-mathjax-config'>
+    MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+  </script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML' type='text/javascript'>
+  </script> 
+ <script src="https://kit.fontawesome.com/2200700041.js" crossorigin="anonymous"></script>
+    <script src = "js/Suhu.js"></script>
 </body>
 </html>
